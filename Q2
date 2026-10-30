@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    float num1;
+    float num2;
+    float result;
+    char operation;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    cout << "Enter operator: ";
+    cin >> operation;
+
+    switch (operation){
+        case '+':
+        result = num1 + num2;
+        cout << "The result of the operation is: " << result;
+        break;
+
+        case '-':
+        result = num1 - num2;
+        cout << "The result of the operation is: " << result;
+        break;
+
+        case '*':
+        result = num1 * num2;
+        cout << "The result of the operation is: " << result;
+        break;
+
+        case '/':
+        result = num1 / num2;
+        cout << "The result of the operation is: " << result;
+        break;
+
+        default:
+        cout << "Invalid operator.";
+    }
+    return 0;
+}
