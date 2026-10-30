@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num > 0 && num <= 9999){
+        if (num <= 9){
+            cout << num << " is a positive number with 1 digit.";
+        }
+        else if (num <= 99){
+            cout << num << " is a positive number with 2 digits.";
+        }
+        else if (num <= 999){
+            cout << num << " is a positive number with 3 digits.";
+        }
+        else {
+            cout << num << " is a positive number with 4 digits.";
+        }
+    }
+    
+    else {
+        cout << "It is a non-positive number.";
+    }
+    return 0;
+}
